@@ -1,0 +1,76 @@
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+        
+    .navigation-menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        background-color: rgb(231, 230, 230);
+        margin: .5em 3em;
+        border-radius: 20px;
+        @include tablet{
+            margin: .5em 1em;
+        }
+
+        .navigation-links{
+            display: flex;
+            text-transform: uppercase;
+            margin:0 20px 0 0px;
+            list-style: none;
+            /*Navigation-links mobile view*/
+            @include tablet{
+                background-color: rgb(33, 37, 36);
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                margin: auto;
+                margin-top: -5vh; 
+                height: 75vh;
+                width: 100%;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                z-index: -1;
+                display: none;
+            }
+
+            li{
+                margin: 0 1em;
+                /*links in mobile view*/
+                @include tablet{
+                    display: block;
+                    width: 65%;
+                    box-shadow: grey 0 5px 5px -5px;
+                }
+
+                a{
+                    color: cadetblue;
+                    text-decoration:none;
+                    font-weight: 500;
+                    /*a  mobile view styilings*/
+                    @include tablet{
+                        font-size: 14px;
+                        color: white;
+                    }
+                }
+
+                
+            }
+            
+            .top-btn a{
+                color: white;
+            }
+           
+        }
+
+        /*Displays menu when burger icon is toggled*/
+        .active{
+            display: flex;
+        }
+
+    }
+}
+

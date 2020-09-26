@@ -1,0 +1,16 @@
+@import "abstracts/variables";/* colors*/
+@import "abstracts/mixins"; /* media querys*/
+@import "fonts/typography"; /* fonts links and typography styles*/
+@import "global/navbar";/* navigation bar stylings*/
+@import "global/body";/* body stylings*/
+@import "global/footer";/* footer stylings*/
+@import "components/burger"; /*  burger menu stylings*/
+@import "components/images"; /*  images stylings*/
+@import "components/buttons";/*  buttons stylings*/
+@import "components/project";/*  project cards stylings*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

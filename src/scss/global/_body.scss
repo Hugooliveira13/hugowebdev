@@ -1,0 +1,227 @@
+/*===================
+    HOME SECTION
+====================*/
+
+html{
+    overflow-x: hidden;
+}
+
+
+/*Landing background Img*/
+.hero{
+    background-image: url(/Img/Hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 120vh;
+    width: 100%;
+    /*main content container*/
+    .intro-container{
+        /*black effect on top of background-picture*/
+        background-color: rgba(31, 29, 29, 0.7); 
+        height: 120vh; 
+        /*Aligns main content center*/
+        display: flex;
+        align-items:center;
+        text-align: center;
+        justify-content: center;
+
+        .intro-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 500px;
+            
+
+            @include mobile{
+                height: 300px;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+/*===================
+    ABOUT SECTION
+====================*/
+.white-container{
+    padding: 9em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .portrait-1{
+        text-align: center;
+        
+
+        img{
+            width: 150px;
+        }
+        @include mobile{
+            img{
+                max-width: 30%;
+            }
+        }
+
+    }
+
+    p{
+        margin: auto;
+
+        @include tablet{
+            margin: auto 2em
+        }
+    }
+
+}
+
+/*===================
+    SKILL SECTION
+====================*/
+/*backgroun image*/
+.background-2{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url(/Img/background-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 6em;
+
+    @include mobile{
+        padding: 6em 1em;
+    }
+    /*grey container on top of bg-img*/
+    .grey-container{
+        padding: 4em;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 30px;
+        /*on tablet/mobile view*/
+        @include tablet{
+            padding: 1.5em;
+        }
+    }
+    /*HTML/CSS/JS container*/
+    .logo-container{
+        text-align: center;
+        padding: 3em 0;
+
+        p{
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 1em;
+            @include fluid-type(320px, 1408px, 12px, 22px);
+        }
+    }
+
+    .skill-list{
+        text-align: center;
+        li{
+            list-style: none;
+            text-transform: uppercase;
+            @include fluid-type(320px, 1408px, 12px, 18px);
+        }
+    }
+
+    .portrait-2{
+        text-align: center;
+        img{
+            width: 60%;
+        }
+        @include mobile{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*===================
+    PROJECT SECTION
+====================*/
+/*Container*/
+.project-container{
+    margin: 9em auto 12em;
+    text-align: center;
+}
+/*Size of image-container*/
+.img-holder{
+    margin-top: 2em;
+    max-height: 300px;
+    width: auto;
+ 
+        /*round corncers on pictures*/
+        img{
+            border-radius: 20px;
+        }
+}
+
+.btn-box{
+    margin: 2em .5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*===================
+    PROJECT SECTION
+====================*/
+
+.background-3{
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.2)), url(/Img/background-3.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    padding: 6em;
+
+    @include mobile{
+        padding: 6em 1em;
+    }
+}
+.form-wrapper{
+background-color: rgba(187, 187, 187, 0.3);
+margin-top: 5em;
+padding: 1em;
+width: 600px;
+
+border-radius: 5px;
+
+    input{
+        width: 100%;
+        margin: .5em auto;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    textarea{
+        width: 100%;
+        max-height:300px ;
+        margin: .5em auto;
+        border-radius: 5px;
+        resize: none;
+        outline: none;
+    }
+
+}
+
+/*===================
+    FOOTER SECTION
+====================*/
+
+footer{
+    background: rgb(236, 228, 228);
+    height: 13vh;
+    text-align: center;
+
+    .media-logos{
+        height: 8vh;
+        margin: 0 3em;
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+
+        a{
+            margin: 0 1em;
+            color: black;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    }
+}

@@ -1,0 +1,115 @@
+.top-btn{
+    background-color: cadetblue;
+    border-radius: 20px;
+    width: 110px;
+    text-align: center;
+    @include tablet{
+        background-color:transparent;
+        text-align: start;
+    }
+
+  
+}
+.top-btn:active{
+    transform: scale(.9);
+}
+
+
+
+
+
+.hero-btn{
+    position: relative;
+    align-self: center;
+    bottom: 2%;
+    background-color:rgb(187, 187, 187);
+    color: rgb(64, 106, 107);
+    font-weight: 600;
+    width: 220px;
+    height:65px;
+    border: 2px solid rgb(64, 106, 107);
+    font-size: 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    box-shadow: rgb(158, 157, 157) 1px 1px 10px 1px;
+}
+
+.hero-btn:focus{
+    outline: none;
+}
+
+
+.hero-btn:active{
+    transform: scale(.9);
+}
+
+
+/*===================
+    PROJECT SECTION
+    ====================*/
+/*View project buttons*/
+.vp-btn{
+    color:white;
+    height: 35px;
+    width: 150px;
+    border: none;
+    background-color: cadetblue;
+    border-radius: 10px;
+
+    @include tablet{
+        font-size: 14px;
+        width: 100px;
+    }
+}
+
+.vp-btn:focus{
+    outline: none;
+}
+
+.vp-btn:active{
+    transform: scale(.9);
+}
+
+
+/*View code buttons*/
+.vc-btn{
+    color:cadetblue;
+    font-weight: 500;
+    height: 35px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+
+    @include tablet{
+        font-size: 14px;
+        width: 100px;
+    }
+    
+}
+
+.vc-btn:focus{
+    outline: none;
+}
+
+.vc-btn:active{
+    transform: scale(.9);
+}
+
+
+/*Form button*/
+.form-btn{
+    color:white;
+    height: 35px;
+    width: 150px;
+    border: none;
+    background-color: cadetblue;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.form-btn:focus{
+    outline: none;
+}
+.form-btn:active{
+    transform: scale(.9);
+}

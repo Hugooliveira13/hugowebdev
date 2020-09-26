@@ -1,0 +1,16 @@
+/*Hide burger and X icons on Desktop*/
+.hide-show-desktop{
+display: none;
+
+@include tablet{
+    display: flex;
+}
+}
+
+.fa-bars{
+    font-size: 35px;
+    margin-right:30px ;
+    @include mobile{
+        font-size: 25px;
+    }
+}
